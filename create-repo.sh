@@ -3,7 +3,10 @@
 if [[ ! -d ./personal-projects/$1 ]]; then
     mkdir ../$1
 fi
-
+cd ..
+pwd
+cd $1
+pwd
 # git init
 # git remote add origin git@github.com:$2/$1.git
 
