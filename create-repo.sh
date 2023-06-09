@@ -7,8 +7,7 @@ cd ..
 pwd
 cd $1
 pwd
-# git init
-# git remote add origin git@github.com:$2/$1.git
+
 
 echo "# $1" >> ../$1/README.md
 ignore_files=('venv/' '**/*.pyc' '**/*pychache' '**/*_cache' '.env')
@@ -20,6 +19,9 @@ done
 mkdir ../$1/src ../$1/tests
 touch ../$1/src/main.py ../$1/tests/test-main.py
 
+# git init
+# git remote add origin https://github.com/$2/$1.git
+# git remote -v
 # git add .
 # git commit -m "initial commit"
-# git push origin main
+# git push -u origin main
